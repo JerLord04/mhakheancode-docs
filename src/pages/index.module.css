@@ -21,3 +21,56 @@
   align-items: center;
   justify-content: center;
 }
+
+[data-theme='dark'] .headerBar {
+  display: flex;
+  background-color: rgb(23, 37, 84);
+  width: 100vw;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+[data-theme='light'] .headerBar {
+  display: flex;
+  background-color: rgb(160, 215, 238);
+  width: 100vw;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  grid-template-rows: repeat(2,auto);
+  row-gap: 50px;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: auto;
+  width: 400px;
+  /* background-color: blue; */
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.test {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+  transition: background-color 0.5s, color 0.5s;
+}
